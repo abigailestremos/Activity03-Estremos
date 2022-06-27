@@ -1,9 +1,9 @@
-import calculator_script_1_stat as totalhp
-import calculator_script_1_stat as totalatk
-import calculator_script_1_stat as totaldef
+import calculator_script_1_stat as totshp
 import calculator_script_1_stat as totsatk
 import calculator_script_1_stat as totsdef
-import calculator_script_1_stat as totalspd
+import calculator_script_1_stat as totsatk
+import calculator_script_1_stat as totsdef
+import calculator_script_1_stat as totsspd
 import calculator_script_2_ev as evatk
 import calculator_script_2_ev as evdef
 import calculator_script_2_ev as evsatk
@@ -46,7 +46,7 @@ match choose:
                 ev = int(input("EV: "))
 
             print("\n")
-            print("HP =", totalhp.PokemonSTAT.tothpReturnWithParams(hp,iv,ev,level), end='\n\n')
+            print("HP =", totshp.PokemonSTAT.tothpReturnWithParams(hp,iv,ev,level), end='\n\n')
             print("\nSystem Terminated")
 
 
@@ -118,11 +118,11 @@ match choose:
             print("\n")
             print("Pokemon", poke, "a Lvl.", level, "with", nature, "nature, Overall Stats:")
             # Total's code
-            print("\nATK =", totalatk.PokemonSTAT.totatkReturnWithParams(level,baseatk,iv_atk,ev_atk,nature), end='\n\n')
-            print("DEF =", totaldef.PokemonSTAT.totdefReturnWithParams(level,basedef,iv_def,ev_def,nature), end='\n\n')
+            print("\nATK =", totsatk.PokemonSTAT.totatkReturnWithParams(level,baseatk,iv_atk,ev_atk,nature), end='\n\n')
+            print("DEF =", totsdef.PokemonSTAT.totdefReturnWithParams(level,basedef,iv_def,ev_def,nature), end='\n\n')
             print("SP. ATK =", totsatk.PokemonSTAT.totsatkReturnWithParams(level,basesatk,iv_satk,ev_satk,nature), end='\n\n')
             print("SP. DEF =", totsdef.PokemonSTAT.totsdefReturnWithParams(level,basesdef,iv_sdef,ev_sdef,nature), end='\n\n')
-            print("SPD =", totalspd.PokemonSTAT.totspdReturnWithParams(level,basespd,iv_spd,ev_spd,nature), end='\n\n')
+            print("SPD =", totsspd.PokemonSTAT.totspdReturnWithParams(level,basespd,iv_spd,ev_spd,nature), end='\n\n')
             print("\nSystem Terminated")
     #Overall stat 
     case 2:
